@@ -35,6 +35,8 @@ namespace targetcrash{
             Console.WriteLine("Select A Player To Crash!!! ~<3 With Luv -Kat");
             var g=GameObject.Find("UserInterface/QuickMenu/UserInteractMenu/ReportAbuseButton").transform;
             var g1=GameObject.Find("UserInterface/QuickMenu/UserInteractMenu/WarnButton").transform;
+            var g2=GameObject.Find("UserInterface/QuickMenu/UserInteractMenu/KickButton").transform;
+            if(File.Exists("Mods/DayClientML2.dll")){g=g2;Console.WriteLine("Detected DayClientML2, Moving Button For Compatibility");}
             var x=GameObject.Instantiate(QuickMenu.prop_QuickMenu_0.transform.Find("CameraMenu/BackButton").gameObject,g.parent);
             x.transform.position=g1.position;
             x.GetComponentInChildren<Text>().text="Auto Object";
