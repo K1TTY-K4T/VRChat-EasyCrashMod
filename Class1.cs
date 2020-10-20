@@ -31,7 +31,7 @@ namespace targetcrash{
         }
         public override void VRChat_OnUiManagerInit(){
             Console.WriteLine("Join discord.gg/PQjc7FT");
-            Console.WriteLine("Using Objects To Crash Players 1.2 (this has been around for a very long time and anyone claiming to own this is a skid)");
+            Console.WriteLine("Using Objects To Crash Players 1.4 (this has been around for a very long time and anyone claiming to own this is a skid)");
             Console.WriteLine("Select A Player To Crash!!! ~<3 With Luv -Kat");
             var g=GameObject.Find("UserInterface/QuickMenu/UserInteractMenu/ReportAbuseButton").transform;
             var g1=GameObject.Find("UserInterface/QuickMenu/UserInteractMenu/WarnButton").transform;
